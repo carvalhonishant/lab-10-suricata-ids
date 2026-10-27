@@ -1,0 +1,4 @@
+10/26/2026-21:51:46.591674  [**] [1:1000003:1] LAB TCP SYN port scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.51.100.66:40037 -> 192.0.2.5:8000
+10/26/2026-21:51:46.241674  [**] [1:1000003:1] LAB TCP SYN port scan [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 198.51.100.66:40030 -> 192.0.2.5:636
+10/26/2026-21:51:44.741675  [**] [1:1000001:1] LAB Sqlmap scanner User-Agent [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 198.51.100.66:44444 -> 192.0.2.5:80
+10/26/2026-21:51:44.741675  [**] [1:1000002:1] LAB SQL Injection attempt in URI [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 198.51.100.66:44444 -> 192.0.2.5:80

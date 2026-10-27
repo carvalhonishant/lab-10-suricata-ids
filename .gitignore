@@ -1,0 +1,5 @@
+.DS_Store
+data/fast.log
+data/eve.json
+data/stats.log
+data/suricata.log

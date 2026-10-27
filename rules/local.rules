@@ -1,0 +1,8 @@
+# Lab 10 custom Suricata rules
+# Detect the two attacks in attack.pcap. sid 1000000+ is the local range.
+
+alert http any any -> any any (msg:"LAB Sqlmap scanner User-Agent"; flow:established,to_server; http.user_agent; content:"sqlmap"; nocase; classtype:web-application-attack; sid:1000001; rev:1;)
+
+alert http any any -> any any (msg:"LAB SQL Injection attempt in URI"; flow:established,to_server; http.uri; content:"'1'='1"; nocase; classtype:web-application-attack; sid:1000002; rev:1;)
+
+alert tcp any any -> any any (msg:"LAB TCP SYN port scan"; flags:S; threshold:type threshold, track by_src, count 20, seconds 60; classtype:attempted-recon; sid:1000003; rev:1;)
